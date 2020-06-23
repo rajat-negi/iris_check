@@ -4,7 +4,7 @@ from flask import Flask,request,render_template
 import pickle
 
 app=Flask(__name__)
-mod=pickle.load(open('C:/Users/rajat-negi/Desktop/python/spyderr/iris_check.pickle','rb'))
+mod=pickle.load(open('iris_check.pickle','rb'))
 
 @app.route('/')
 def home():
