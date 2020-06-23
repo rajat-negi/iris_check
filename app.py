@@ -20,7 +20,7 @@ def predict():
     df=pd.DataFrame(feature_values,columns=feature_names)
     output=mod.predict(df)
     
-    return render_template('index.html',prediction_text='the flower is {}'.format(output[0]))
+    return render_template('index.html',prediction_text='the flower is {}'.format(output))
 
 if __name__=="__main__":
     app.run()
