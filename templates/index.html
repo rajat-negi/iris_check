@@ -1,13 +1,17 @@
 <html>
 <body>
+<div>
+<center>
 <form action="{{url_for('predict')}}" method="post">
-<input type="text" name="sepal_length" placeholder="sepal length" required="required"/>
-<input type="text" name="sepal_width" placeholder="sepal width" required="required"/>
-<input type="text" name="petal_length" placeholder="petal length" required="required"/>
-<input type="text" name="petal_width" placeholder="petal width" required="required"/>
+<input type="text" name="sepal_length" placeholder="sepal length" required="required"/><br>
+<input type="text" name="sepal_width" placeholder="sepal width" required="required"/><br>
+<input type="text" name="petal_length" placeholder="petal length" required="required"/><br>
+<input type="text" name="petal_width" placeholder="petal width" required="required"/><br>
 <button type="submit">submit</button>
 </form>
 {{prediction_text}}
+</center>
+</div>
 </body>
 </html>
 
