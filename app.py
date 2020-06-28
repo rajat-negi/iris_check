@@ -5,7 +5,7 @@ import pickle
 import traceback
 
 app=Flask(__name__)
-mod=pickle.load(open('iris_check_1.pickle','rb'))
+mod=pickle.load(open('iris_check_corrected.pickle','rb'))
 
 @app.route('/')
 def home():
