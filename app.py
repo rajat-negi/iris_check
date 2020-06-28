@@ -2,8 +2,9 @@ import numpy as np
 import pandas as pd
 from flask import Flask,request,render_template
 # import pickle
-from sklearn.externals import  joblib
+# from sklearn.externals import  joblib
 import traceback
+import joblib
 
 app=Flask(__name__)
 
