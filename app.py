@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 from flask import Flask,request,render_template
-import pickle
+# import pickle
+from sklearn.externals import  joblib
 import traceback
 
 app=Flask(__name__)
@@ -13,7 +14,7 @@ def home():
 @app.route('/predict',methods=['post'])
 def predict():
     try:
-        mod = pickle.load(open('iris_check_new.pickle', 'rb'))
+        mod = joblib.load('iris_model.sav')
         input_features=[float(x) for x in request.form.values()]
         feature_values=[np.array(input_features)]
 
