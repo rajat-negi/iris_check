@@ -26,7 +26,7 @@ def predict():
     except Exception as e:
         ## new updates
         # message = "exception \n " + format_exc(e)
-        message = "exception \n" + e
+        message = "exception \n" + str(e)
         return message
 
 if __name__=="__main__":
