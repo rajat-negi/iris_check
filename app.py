@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from flask import Flask,request,render_template
 import pickle
+import traceback
 
 app=Flask(__name__)
 mod=pickle.load(open('iris_check_1.pickle','rb'))
