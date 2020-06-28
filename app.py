@@ -23,6 +23,7 @@ def predict():
 
         return render_template('index.html',prediction_text='the flower is {}'.format(output[0]))
     except Exception as e:
+        // new updates
         message = "exception \n " + format_exc()
         return message
 
